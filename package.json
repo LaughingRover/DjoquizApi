@@ -1,0 +1,71 @@
+{
+  "name": "djoyow-quiz",
+  "version": "1.0.0",
+  "description": "Api Rest for Afrika Quiz Backend",
+  "main": "./src/index.js",
+  "engineqs": {
+    "node": "12.16.1"
+  },
+  "scripts": {
+    "start": "node src/index",
+    "dev": "cross-env NODE_ENV=development nodemon index",
+    "run-doc": "cd docs/apiDoc & npx serve",
+    "test": "jest"
+  },
+  "keywords": [
+    "server",
+    "http",
+    "api",
+    "rest"
+  ],
+  "author": "Djoyow",
+  "license": "ISC",
+  "_moduleAliases": {
+    "#root": ".",
+    "#lib": "./src",
+    "#db": "./src/db",
+    "#config": "./src/config",
+    "#constants": "./src/constants",
+    "#controllers": "./src/controllers",
+    "#routes": "./src/routes",
+    "#middlewares": "./src/routes/middlewares",
+    "#utils": "./src/utils"
+  },
+  "dependencies": {
+    "ajv": "^7.1.0",
+    "ajv-formats": "^2.1.0",
+    "async": "^3.2.0",
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "connect-mongodb-session": "^2.4.1",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-flash": "0.0.2",
+    "express-session": "^1.17.1",
+    "fs-extra": "^9.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "md5": "^2.3.0",
+    "module-alias": "^2.2.2",
+    "moment": "^2.27.0",
+    "mongoose": "^5.13.8",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "nodemailer": "^6.4.11",
+    "passport": "^0.4.1",
+    "passport-facebook": "^3.0.0",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-local": "^1.0.0",
+    "request": "^2.88.2",
+    "uuid": "^3.4.0",
+    "wordcount": "^1.1.1"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.6"
+  }
+}

@@ -1,0 +1,26 @@
+
+1. Open terminal
+
+2. open: .../Afrikaquiz/afrikaquiz/backend/docs/apiDoc
+
+3. run: npx insomnia-documenter --config
+
+4. run: npx serve
+
+you will get: 
+
+npx : 78 installé(s) en 6.527s
+
+   ┌───────────────────────────────────────────────────┐
+   │                                                   │
+   │   Serving!                                        │
+   │                                                   │
+   │   - Local:            http://localhost:5000       │
+   │   - On Your Network:  http://192.--.--.--:5000   │
+   │                                                   │
+   │   Copied local address to clipboard!              │
+   │                                                   │
+   └───────────────────────────────────────────────────┘
+
+5. open http://192.__.__.__:5000 on your browser
+

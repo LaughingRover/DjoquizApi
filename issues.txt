@@ -1,0 +1,84 @@
+SUPERADMIN USER
+
+===========================================================================
+===========================================================================
+            SHOULD'S & SHOULDN'T  
+===========================================================================
+===========================================================================
+- shouldn't have to send back all of the original data to update [category]
+- all routes must be consistent in path name
+- questionnaires should not be created without userId's, if userId exist in 
+  token, then we shouldn't send it for any other route except user routes.
+- after creating questionnaire, response should contain useful information
+  about the questionnaire, like the ID.
+- create new question needs better structure and text trimming.
+- answers to a question should be an array.
+- correct answer should be an index: to avoid api complexity with key confusion
+
+
+===========================================================================
+===========================================================================
+            WORKING  
+===========================================================================
+===========================================================================
+[
+  signup,
+  login,
+
+  getall category,
+  create category,
+  update category,
+  delete category,
+
+  getall subcategory,
+  create subcategory,
+  update subcategory,
+  delete subcategory,
+
+  get questionnaire,
+  create questionnaire,
+  update questionnaire,
+  submite questionnaire,
+  // validate questionnaire,
+  save questionnaire image,
+
+  get  question[type=all],
+  create question,
+  update question,
+]
+
+
+
+===========================================================================
+===========================================================================
+            NOT WORKING  
+===========================================================================
+===========================================================================
+[
+  get questionnaire by type=country,
+  non-breaking error at wordcount on questionnaire update with missing title,
+  getall question
+]
+
+===========================================================================
+===========================================================================
+            OTHERS  
+===========================================================================
+===========================================================================
+I have no idea what "correct questionnaire question" is or what it does.
+
+
+
+
+
+===========================================================================
+===========================================================================
+            _TODO  
+===========================================================================
+===========================================================================
+
+- add an apiKey to allow only access from the our website or patners
+- create a map of requests and permissions to define what user has permissions
+  to what requests
+- automatically delete a temporary image when it has been successfully saved
+- write unit tests and integration tests
